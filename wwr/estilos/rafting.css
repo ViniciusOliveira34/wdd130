@@ -1,0 +1,161 @@
+/* Definição de Variáveis CSS */
+:root {
+    --cor-primaria: #055a05;
+    /* verde-floresta */
+    --cor-secundaria: #f4a261;
+    /* bege médio */
+    --cor-destaque1: #264653;
+    /* azul-escuro acinzentado */
+    --cor-destaque2: #e9c46a;
+    /* amarelo-claro dourado */
+    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+/* Reset Universal do Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais do Body */
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+    background-color: #fcfcfc;
+}
+
+/* Limite de Largura e Centralização das Seções Principais */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Estilo do Cabeçalho e Navegação */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+
+header .logo {
+    max-width: 100px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* Títulos */
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+/* Margens e Paddings Padronizados */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Estilização da Seção Hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--cor-destaque1);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin-left: 12px;
+    border-radius: 4px;
+}
+
+/* Seções Inferiores */
+.historia,
+.aventura {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilização do Rodapé */
+footer {
+    background-color: var(--cor-destaque1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
