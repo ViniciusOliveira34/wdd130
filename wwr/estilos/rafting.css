@@ -26,21 +26,21 @@ body {
     background-color: #fcfcfc;
 }
 
-/* Limite de Largura e Centralização das Seções Principais */
+/* Limite de Largura e Centralização da Página */
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
-/* Estilo do Cabeçalho e Navegação */
+/* Header com CSS Grid */
 header {
     background-color: var(--cor-primaria);
     color: var(--cor-destaque2);
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
-    justify-content: space-between;
     padding: 10px 16px;
 }
 
@@ -49,20 +49,24 @@ header .logo {
     height: auto;
 }
 
-header nav ul {
+/* Nav com CSS Flexbox */
+header nav {
     display: flex;
-    list-style: none;
-    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 12px;
 }
 
 header nav a:hover {
-    color: var(--cor-secundaria);
+    color: var(--cor-destaque2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
 
 /* Títulos */
@@ -71,20 +75,13 @@ h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
-}
-
-/* Margens e Paddings Padronizados */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+    margin-bottom: 12px;
 }
 
 /* Estilização da Seção Hero */
 .hero {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .hero img {
@@ -99,7 +96,7 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.85;
     background-color: var(--cor-destaque1);
     color: #fff;
 }
@@ -122,33 +119,85 @@ article {
     border-radius: 4px;
 }
 
-/* Seções Inferiores */
-.historia,
-.aventura {
+/* Seção História com Layout Grid/Flex */
+.historia {
+    margin: 2rem 0;
+    padding: 1rem;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.historia-conteudo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.historia-conteudo img {
+    width: 100%;
+    height: auto;
     border-radius: 4px;
 }
 
-/* Estilização do Rodapé */
+/* Seção Aventura - Galeria Horizontal com 5 Imagens */
+.aventura {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.galeria-aventura {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.galeria-aventura figure {
+    flex: 1;
+    text-align: center;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-aventura img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.galeria-aventura figcaption {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--cor-destaque1);
+    margin-top: 6px;
+}
+
+/* Footer Alinhado à Direita com Flexbox */
 footer {
     background-color: var(--cor-destaque1);
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 16px;
+    padding: 15px 16px;
+    margin-top: 2rem;
 }
 
 footer p {
     margin: 0;
+    font-size: 0.9rem;
 }
 
 .redes-sociais {
     display: flex;
-    gap: 12px;
-    margin: 0;
-    padding: 0;
+    gap: 15px;
+    align-items: center;
 }
 
 .redes-sociais a {
@@ -156,6 +205,7 @@ footer p {
 }
 
 .redes-sociais img {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
+    display: block;
 }
