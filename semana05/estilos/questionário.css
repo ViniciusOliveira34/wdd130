@@ -1,0 +1,94 @@
+/* Resets e Fontes Básicas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2rem 1rem;
+}
+
+/* Título Centralizado */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Container do Formulário (Caixa Cinza) */
+form {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rótulos das Perguntas em Negrito e Itálico */
+label {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Estilo do Código da Pergunta 4 */
+code {
+    display: block;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: monospace;
+    font-style: normal;
+    text-align: center;
+    padding: 8px;
+    margin: 8px auto 0 auto;
+    width: 70%;
+    border-radius: 2px;
+}
+
+/* Entradas do Formulário */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 1px solid #b0b0b0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botão Enviar Questionário (Roxo) */
+button[type="submit"] {
+    margin-top: 2rem;
+    background-color: #3b3dbf;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e30a3;
+}
