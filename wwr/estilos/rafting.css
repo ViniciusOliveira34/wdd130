@@ -209,3 +209,148 @@ footer p {
     height: 28px;
     display: block;
 }
+
+/* ===================================================
+   ESTILOS FIÉIS AO WIREFRAME (contato.html)
+   =================================================== */
+
+/* Informações da Empresa no Topo */
+.empresa-cabecalho {
+    text-align: center;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.empresa-cabecalho h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.empresa-cabecalho address {
+    font-style: normal;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+/* Container Split (Mapa na Esquerda, Formulário na Direita) */
+.contato-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+    margin-bottom: 2.5rem;
+}
+
+.mapa-box iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    border: 1px solid #777;
+}
+
+/* Estrutura do Formulário */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.campo-linha {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: flex-start;
+}
+
+.campo-linha label {
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.campo-linha input[type="text"],
+.campo-linha input[type="email"],
+.campo-linha textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.radio-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-opcoes label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding-top: 0;
+}
+
+.campo-checkbox {
+    margin-left: 130px;
+    /* Alinha com os inputs */
+}
+
+.campo-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    margin-left: 130px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #000;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #cccccc;
+}
+
+/* Seção de Funcionários */
+.equipe-secao {
+    border: 1px solid #000;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+}
+
+.equipe-secao h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.equipe-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.equipe-cards figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipe-cards img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    background-color: #ccc;
+    margin-bottom: 8px;
+}
+
+.equipe-cards figcaption {
+    font-weight: bold;
+}

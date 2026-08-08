@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Companhia de Rafting em Corredeiras</title>
+    <meta name="description"
+      content="Entre em contato com a Companhia de Rafting em Corredeiras. Tire suas dúvidas, faça reservas, envie sugestões e veja nossa localização.">
+    <meta name="author" content="Vinicius Vieira">
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logotipo Aventura em Corredeiras" class="logo">
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Cabeçalho de Informações da Empresa (Centralizado) -->
+        <section class="empresa-cabecalho">
+            <h1>Companhia de Rafting em Corredeiras</h1>
+            <address>
+                <p>123 Rua Principal do Rio</p>
+                <p>Foz do Iguaçu, Paraná</p>
+                <p>+55 45 99999-9999</p>
+                <p>info@correiras.com</p>
+            </address>
+        </section>
+
+        <!-- Bloco Principal: Mapa à esquerda e Formulário à direita -->
+        <section class="contato-container">
+            <!-- Mapa do Google -->
+            <div class="mapa-box">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.0808119106096!2d-54.585404!3d-25.513475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzQ4LjUiUyA1NMKwMzUnMDcuNSJX!5e0!3m2!1pt-BR!2sbr!4v1620000000000!5m2!1pt-BR!2sbr"
+                  width="100%" height="100%" allowfullscreen="" loading="lazy"
+                  title="Mapa da sede"></iframe>
+            </div>
+
+            <!-- Formulário de Contato -->
+            <form class="form-box" action="#" method="post">
+                <div class="campo-linha">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+                </div>
+
+                <div class="campo-linha">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+                </div>
+
+                <div class="campo-linha radio-grupo">
+                    <label class="rotulo-grupo">Propósito da Mensagem</label>
+                    <div class="radio-opcoes">
+                        <label><input type="radio" name="finalidade" value="geral" checked> Dúvida
+                            Geral</label>
+                        <label><input type="radio" name="finalidade" value="reserva"> Pergunta sobre
+                            Reserva</label>
+                        <label><input type="radio" name="finalidade" value="sugestao">
+                            Sugestão</label>
+                    </div>
+                </div>
+
+                <div class="campo-linha">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite aqui"
+                      required></textarea>
+                </div>
+
+                <div class="campo-checkbox">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                        Por favor, me inscreva na newsletter mensal
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Entrar em Contato!</button>
+            </form>
+        </section>
+
+        <!-- Seção Inferior: Perfis da Equipe -->
+        <section class="equipe-secao">
+            <h2>Estamos Aqui para Serví-lo</h2>
+            <div class="equipe-cards">
+                <figure>
+                    <img src="imagens/cliente.jpg" alt="Foto Perfil do Funcionário">
+                    <figcaption>Perfil do Funcionário</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/cliente.jpg" alt="Foto Perfil do Funcionário">
+                    <figcaption>Perfil do Funcionário</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/cliente.jpg" alt="Foto Perfil do Funcionário">
+                    <figcaption>Perfil do Funcionário</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Conteúdo de Rodapé incluindo Ícones/Links de Mídia Social</p>
+        <nav class="redes-sociais">
+            <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png"
+                  alt="Facebook"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="imagens/linkedin.png"
+                  alt="LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png"
+                  alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
