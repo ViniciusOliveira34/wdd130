@@ -1,4 +1,6 @@
-
+/* ===================================================
+   RESET E VARIÁVEIS DE CORES
+   =================================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,6 +23,9 @@ body {
   line-height: 1.6;
 }
 
+/* ===================================================
+   CABEÇALHO, NAVEGAÇÃO E RODAPÉ (COMUNS)
+   =================================================== */
 header {
   background-color: var(--cor-primaria);
   display: flex;
@@ -73,11 +78,13 @@ footer {
   margin-left: 10px;
 }
 
+/* ===================================================
+   HERO BANNER & SEÇÃO SOBRE NÓS (sobre.html) - CORRIGIDO
+   =================================================== */
 .hero {
   position: relative;
   width: 100%;
-  margin-bottom: 2rem;
-  border-radius: 8px;
+  margin-bottom: 3rem;
 }
 
 .hero > img {
@@ -88,6 +95,23 @@ footer {
   border-radius: 8px;
 }
 
+/* Posiciona o h1 sobre a imagem sem sumir */
+.hero > h1 {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--cor-branca);
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  width: 80%;
+  margin-bottom: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+/* Ajuste da mensagem em Hero Banners com hero-msg (Home) */
 .hero-msg {
   position: absolute;
   top: 50%;
@@ -106,20 +130,21 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+/* Caixas e Artigos da página Sobre Nós */
 .hero article {
   display: flex;
   align-items: center;
   gap: 20px;
   background-color: var(--cor-branca);
   padding: 1.5rem;
-  margin-top: -40px;
+  margin-top: -30px;
   position: relative;
   z-index: 2;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .hero article img {
@@ -185,6 +210,9 @@ footer {
   color: var(--cor-primaria);
 }
 
+/* ===================================================
+   PÁGINA FALE CONOSCO (contato.html)
+   =================================================== */
 .empresa-cabecalho {
   text-align: center;
   margin: 1.5rem 0 2rem 0;
@@ -327,6 +355,9 @@ footer {
   font-weight: bold;
 }
 
+/* ===================================================
+   PÁGINAS HOME E PASSEIOS (index.html e passeios.html)
+   =================================================== */
 .newsletter-section {
   background-color: var(--cor-branca);
   padding: 2rem;
